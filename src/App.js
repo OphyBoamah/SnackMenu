@@ -1,4 +1,5 @@
 import './App.css';
+import Meal from "./components/Meal";
 
 function App() {
   return (
@@ -12,14 +13,11 @@ function App() {
               <button className="btn">Shakes</button>
               <button className="btn">Dinner</button>
           </div>
-          <div className="meals">
-              <img src={require('./images/waffles.jpeg').default} alt="Buttermilk-pancake" />
-              <h3>Buttermilk Pancake <span className="snack-price">$15.99</span></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet
-                  consequuntur debitis doloremque expedita facilis mollitia non praesentium soluta, temporibus.</p>
 
-          </div>
       </header>
+        <div className="meals">
+            <Meal/>
+        </div>
     </div>
   );
 }

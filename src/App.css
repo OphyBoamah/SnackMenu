@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: normal;
+}
+
+h1, .category-buttons {
+  text-align: center;
+
+}
+
+.btn {
+  font-size: 14px;
+  color: #ad6d2f;
+  border: 1px solid #ad6d2f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  color: white;
+  background-color: #ad6d2f;
+}
+
+header {
+  margin: 35px 0px;
+}
+/*Component*/
+img {
+  border: 6px solid #ad6d2f ;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.snack-price {
+  color: #ad6d2f;
+  margin-left: 100px;
+
+}
+
+.meal-data {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted black;
+}
+
+.meal {
+  display: flex;
+}
+
+.facts {
+  width: 350px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.meal-details {
+  line-height: 5;
+  font-kerning: normal;
+  font-size: 12px;
+}
