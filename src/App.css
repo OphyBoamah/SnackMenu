@@ -69,12 +69,12 @@ header {
 img {
   border: 6px solid #ad6d2f ;
   border-radius: 5px;
-  width: 250px;
+  width: 200px;
 }
 
 .snack-price {
   color: #ad6d2f;
-  margin-left: 100px;
+  margin-left: 70px;
 
 }
 
@@ -88,7 +88,7 @@ img {
 }
 
 .facts {
-  width: 350px;
+  width: 320px;
   margin-left: 20px;
   text-align: left;
 }
@@ -97,4 +97,18 @@ img {
   line-height: 5;
   font-kerning: normal;
   font-size: 12px;
+}
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-gap: 40px;
+  padding: 0px 150px;
+}
+
+.all-meals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
