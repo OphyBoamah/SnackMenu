@@ -1,5 +1,5 @@
 import './App.css';
-import Meal from "./components/Meal";
+import MealCard from "./components/MealCard";
 
 //
 // const buttons = [
@@ -10,14 +10,14 @@ import Meal from "./components/Meal";
 //     {name: "Dinner"}
 // ]
 
-const cards = [
+const meals = [
     {   id: 1,
         name:"Buttermilk Pancakes",
         price:"15.99",
         alt: "Buttermilk Pancakes",
         img: "waffles.jpeg",
         details:"Loremipsum dolor sit amet, consectetur elit adipisicing. Aliquid amet " +
-        "consequuntur debitis doloremque expedita facilis mollitia non entity praesentium soluta, temporibus" },
+            "consequuntur debitis doloremque expedita facilis mollitia non entity praesentium soluta, temporibus" },
 
     {   id: 2,
         name:"Diner Doubles",
@@ -25,16 +25,16 @@ const cards = [
         alt: "Diner Doubles",
         img: "burgerchips.jpeg",
         details:"Lorem ipsum dolor sit amet, consectetur elit adipisicing. Aliquid amet " +
-        "consequuntur debitis doloremque expedita facilis mollitia non entity praesentium soluta, temporibus"
+            "consequuntur debitis doloremque expedita facilis mollitia non entity praesentium soluta, temporibus"
     },
 
     {   id: 3,
-        name:"Godzilla Milkshake",
+        name:"Simple Burger",
         price:"6.99",
         alt: "Godzilla Milkshake",
-        img: "icecream.jpeg",
+        img: "simpleburger.jpeg",
         details:"Lorem ipsum dolor sit amet, consectetur elit adipisicing. Aliquid amet " +
-        "consequuntur debitis doloremque expedita facilis mollitia non entity praesentium soluta, temporibus"
+            "consequuntur debitis doloremque expedita facilis mollitia non entity praesentium soluta, temporibus"
     },
 
     {
@@ -52,7 +52,7 @@ const cards = [
         name: "Egg attack",
         price: "22.99",
         alt: "Egg attack",
-        img: "simpleburger.jpeg",
+        img: "burger.jpeg",
         details: "Lorem ipsum dolor sit amet, consectetur elit adipisicing. Aliquid amet " +
             "consequuntur debitis doloremque expedita facilis mollitia non entity praesentium soluta, temporibus"
     },
@@ -109,6 +109,7 @@ const cards = [
 
 
 ]
+
 function App({name, details, img, price}) {
   return (
     <div className="App">
@@ -125,8 +126,8 @@ function App({name, details, img, price}) {
       </header>
         <div className="all-meals">
             <div className="meals">
-                {cards.map((id, card)=>(
-                    <Meal name={cards[0].name} price={cards[0].price} details={cards[0].details} img={cards[0].img} />
+                {meals.map((meal)=>(
+                    <MealCard key={meal.id} name={meal.name} price={meal.price} details={meal.details} img={meal.img} />
                 ))}
             </div>
         </div>
